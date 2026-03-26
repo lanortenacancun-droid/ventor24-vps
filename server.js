@@ -1,3 +1,4 @@
+
 const express = require('express');
 const app = express();
 
@@ -28,3 +29,17 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log('Servidor corriendo en puerto ' + PORT);
 });       
+
+const http = require("http");
+
+const PORT = process.env.PORT || 3000;
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.end("🚀 Ventor24 funcionando");
+});
+
+server.listen(PORT, () => {
+  console.log(Servidor corriendo en puerto ${PORT});
+});
+ e513c0a54f34b92c513aa1e063d00709e3bc396a
